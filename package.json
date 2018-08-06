@@ -1,0 +1,29 @@
+{
+  "name": "thevelops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Flavio Turibio Filho",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "lodash.isempty": "^4.4.0",
+    "mongoose": "^5.2.5",
+    "npm": "^6.3.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
